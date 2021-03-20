@@ -31,6 +31,9 @@
         font-weight: 900;
       }
 
+      h2 {
+        max-width: 400px;
+      }
       li {
         display: flex;
         float: right;
@@ -38,9 +41,14 @@
         padding-left: 100px;
         margin-top: 50px;
       }
+
       a {
         color: rgb(151, 142, 201);
+        text-decoration: none;
+        position: relative;
+        left: -10px;
       }
+
       .para-01 {
         position: relative;
         float: left;
@@ -51,6 +59,10 @@
       img {
         width: 100%;
         opacity: 40%;
+        height: 100vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
       }
 
       .rectangle-01 {
@@ -96,6 +108,96 @@
         border: 2px solid rgb(135, 135, 186);
         z-index: -1;
       }
+
+      @media screen and (max-width: 480px) {
+        body {
+          margin: 0;
+          background-image: url("./Assets/StarWars2.jpg");
+          width: 100%;
+          opacity: 100%;
+          height: 100%;
+          background-position: center;
+          background-repeat: no-repeat;
+          object-fit: cover;
+          z-index: -1;
+        }
+
+        img {
+          opacity: 0%;
+        }
+
+        .para {
+          margin: 0;
+          top: 40px;
+          left: 0px;
+          max-width: 300px;
+          margin-right: 0px;
+          text-align: right;
+          position: absolute;
+          font-family: "Orbitron", sans-serif;
+          color: rgb(173, 46, 64);
+          font-size: 16px;
+          font-weight: 900;
+          z-index: 2;
+        }
+
+        a {
+          color: rgb(67, 160, 216);
+          position: relative;
+          left: -170px;
+          float: left;
+          top: -20px;
+        }
+
+        .para-01 {
+          position: absolute;
+          float: left;
+        }
+
+        .rectangle-01 {
+          position: absolute;
+          width: 160px;
+          height: 35px;
+          background-color: transparent;
+          top: 35px;
+          left: 40px;
+          border: 2px solid rgb(67, 160, 216);
+          z-index: -1;
+        }
+
+        .rectangle-02 {
+          position: absolute;
+          width: 160px;
+          height: 35px;
+          background-color: transparent;
+          top: 105px;
+          left: 40px;
+          border: 2px solid rgb(67, 160, 216);
+          z-index: -1;
+        }
+
+        .rectangle-03 {
+          position: absolute;
+          width: 160px;
+          height: 35px;
+          background-color: transparent;
+          top: 175px;
+          left: 40px;
+          border: 2px solid rgb(67, 160, 216);
+          z-index: -1;
+        }
+
+        .rectangle-04 {
+          position: absolute;
+          width: 160px;
+          height: 35px;
+          background-color: transparent;
+          top: 245px;
+          left: 40px;
+          border: 2px solid rgb(67, 160, 216);
+          z-index: -1;
+        }
+      }
     </style>
   </head>
   <body>
@@ -103,7 +205,7 @@
       <img src="./Assets/star wrae2.jpg" alt="" />
     </div>
     <div class="para">
-      <h2>Click the appropriate screen<br />resolution of your phone</h2>
+      <h2>Click the appropriate screen resolution of your phone</h2>
       <div class="para-01">
         <div class="rectangle-01"></div>
         <div class="rectangle-02"></div>
@@ -111,32 +213,16 @@
         <div class="rectangle-04"></div>
         <ul>
           <li>
-            <a
-              style="text-decoration: none; position: relative; left: -20px"
-              href="./Randomize Files/index19x10.html"
-              >1920 x 1080</a
-            >
+            <a href="./Randomize Files/index19x10.html">1920 x 1080</a>
           </li>
           <li>
-            <a
-              style="text-decoration: none; position: relative; left: -10px"
-              href="./Randomize Files/index12x72.html"
-              >1280 x 720</a
-            >
+            <a href="./Randomize Files/index12x72.html">1280 x 720</a>
           </li>
           <li>
-            <a
-              style="text-decoration: none; position: relative; left: -15px"
-              href="./Randomize Files/index25x14.html"
-              >2560 x 1440</a
-            >
+            <a href="./Randomize Files/index25x14.html">2560 x 1440</a>
           </li>
           <li>
-            <a
-              style="text-decoration: none; position: relative; left: 5px"
-              href="./Randomize Files/index21x10.html"
-              >2160 x 1080</a
-            >
+            <a href="./Randomize Files/index21x10.html">2160 x 1080</a>
           </li>
         </ul>
       </div>
