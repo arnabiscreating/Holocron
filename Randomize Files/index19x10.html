@@ -82,17 +82,17 @@
           font-size: 20px;
           font-weight: 700;
         }
-      }
 
-      .rectangle-01 {
-        position: relative;
-        width: 220px;
-        height: 55px;
-        background-color: transparent;
-        top: 10px;
-        left: 95px;
-        border: 2px solid rgb(119, 196, 200);
-        z-index: 1;
+        .rectangle-01 {
+          position: relative;
+          width: 220px;
+          height: 55px;
+          background-color: transparent;
+          top: 10px;
+          left: 95px;
+          border: 2px solid rgb(119, 196, 200);
+          z-index: -1;
+        }
       }
     </style>
   </head>
@@ -104,16 +104,16 @@
         var linktext = "nolink.html";
         var linkselect = Math.round((linknumber - 1) * Math.random()) + 1;
         if (linkselect == 1) {
-          linktext = "https://colab.research.google.com/notebooks/intro.ipynb";
+          linktext = "https://drive.google.com/drive/folders/1hvfeLZAFVDiItPhQnB5laFyu_C3B03Mn?usp=sharing";
         }
         if (linkselect == 2) {
-          linktext = "https://www.google.co.in/?gws_rd=ssl";
+          linktext = "https://drive.google.com/drive/folders/14Dxjabkpg-P4kxAays8EEjgxL1HQ_ABA?usp=sharing";
         }
         if (linkselect == 3) {
-          linktext = "https://github.com";
+          linktext = "https://drive.google.com/drive/folders/11R0Hv05V3YSBPpAri7hlyCs9y_mSvVaT?usp=sharing";
         }
         document.write(
-          '<a style="text-decoration:none; font-family: Orbitron, sans-serif; font-size: 40px; font-weight:200; color:rgb(119,196,200);" href="' +
+          '<a style="text-decoration:none; font-family: Orbitron, sans-serif; font-size: 40px; font-weight:200; color:rgb(119,196,200); z-index:2;" href="' +
             linktext +
             '">Holocron</a>'
         );
